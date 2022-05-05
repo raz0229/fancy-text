@@ -102,8 +102,7 @@ uppercaseOnly = [9, 10, 11, 12, 13, 14, 16, 19, 20, 21, 22, 23, 24, 25]
 if style in uppercaseOnly:
     text = text.upper()
 if style == 14 or style == 15:
-    reversed = ''.join(reversed(text))
-    text = reversed
+    text = text[::-1]
 
 # Conversion.
 for i in text:
